@@ -1,11 +1,7 @@
 
-
-# Solicitar dos palabras al usuario
 palabra1 = input("Ingresa la primera palabra: ")
 palabra2 = input("Ingresa la segunda palabra: ")
 
-
-# Ordenar las letras de las palabras utilizando el algoritmo de ordenación de burbuja
 for i in range(len(palabra1)):
     for j in range(len(palabra1) - 1):
         if palabra1[j] > palabra1[j + 1]:
@@ -16,7 +12,6 @@ for i in range(len(palabra2)):
         if palabra2[j] > palabra2[j + 1]:
             palabra2 = palabra2[:j] + palabra2[j + 1] + palabra2[j] + palabra2[j + 2:]
 
-# Verificar si las palabras son anagramas
 if palabra1 == palabra2:
     print(f"{palabra1} y {palabra2} son anagramas.")
 else:
